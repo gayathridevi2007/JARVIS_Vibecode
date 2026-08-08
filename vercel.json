@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/auth/login",
+      "destination": "/api/auth"
+    },
+    {
+      "source": "/api/day/12/github",
+      "destination": "/api/day/12"
+    },
+    {
+      "source": "/api/day/12/linkedin",
+      "destination": "/api/day/12"
+    },
+    {
+      "source": "/api/day/12/complete",
+      "destination": "/api/day/12"
+    }
+  ]
+}
