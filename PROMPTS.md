@@ -1,73 +1,286 @@
-AI Usage Log
+# ABTalks — AI Usage Log
 
-Project
+## Project
 
-JARVIS Vibecode -- 60-Day Challenge Platform
+ABTalks — 60-Day Coding Challenge Platform
 
-This project was developed with AI-assisted/vibe-coding workflows. AItools were used for planning, implementation guidance, debugging, APItesting, UI improvements, and deployment troubleshooting.
+## Overview
 
-AI Tools Used
+This project was developed using an AI-assisted / vibe-coding workflow. AI tools were used for planning, UI/UX development, implementation guidance, debugging, testing, API development, responsive design, and deployment troubleshooting.
 
-ChatGPT
+## AI Tools Used
 
-Antigravity
+- ChatGPT
+- Antigravity
+- GitHub Copilot / VS Code AI
 
-GitHub Copilot / VS Code AI assistance
+---
 
-1. Project and Frontend Development
+## 1. Problem Understanding and Planning
 
-AI assistance was used to plan and improve the challenge-platformfrontend, including the page structure, challenge screens, progressdisplay, proof-of-work sections, completion states, andresponsive/mobile-first presentation.
+AI assistance was used to understand the ABTalks redesign requirements and plan the core student experience.
 
-Representative task:Build and refine a student challenge platform with clear challengeinformation, progress cues, proof submission, and completion feedback.
+### Representative Prompt
 
-2. Day 12 -- Onboarding Flow
+> Design a mobile-first experience for ABTalks, a 60-day coding challenge for college students. The platform should help students understand the challenge, complete daily tasks, submit GitHub and LinkedIn proof, and track their progress.
 
-AI assistance was used for the Day 12 requirement: designing a polishedonboarding experience for a student joining the 60-day challenge.
+The requirements were translated into three primary routes:
 
-Representative task:Create a thoughtful onboarding flow for a student joining a 60-daychallenge, with clarity, motivation, first impressions, mobile-firstlayout, progress cues, and a short reflection.
+- `/`
+- `/dashboard`
+- `/day/12`
 
-3. GitHub and LinkedIn Proof Submission
+---
 
-AI assistance was used to implement and debug the GitHub and LinkedInproof submission flow.
+## 2. Landing Page Development
 
-Representative tasks: - Add GitHub proof submission. - Add LinkedInproof submission. - Connect the frontend submission forms to the Day 12API endpoints. - Improve error handling and confirmation feedback. -Update the dashboard after successful submissions.
+AI assistance was used to design the landing page for students who had never used ABTalks.
 
-4. Day Completion and Progress
+### Representative Prompt
 
-AI assistance was used to implement and verify the Day 12 completionflow.
+> Create a modern mobile-first landing page for a 60-day coding challenge. Clearly communicate the value of the challenge, build trust, motivate students to start, and keep the experience simple on a 390px mobile viewport.
 
-Representative task:After valid proof submissions, allow the student to complete Day 12 andupdate the progress state toward Day 13.
+The resulting page focuses on:
 
-5. Login / Authentication
+- 60-day challenge messaging
+- Student motivation
+- Progress and streak concepts
+- Clear calls to action
+- Responsive design
 
-AI assistance was used to add an email-based login/session flow so auser can enter the challenge platform and access the challenge andsubmission areas.
+---
 
-Representative tasks: - Add a login page. - Create a login APIendpoint. - Persist the signed-in student state. - Protectstudent-related API routes. - Add a logout control. - Verify that thesession persists after refreshing the page.
+## 3. Student Dashboard
 
-6. API Debugging and Verification
+AI assistance was used to design the student dashboard as the main daily command center.
 
-AI assistance was used to debug API request paths and verify backendendpoints.
+### Representative Prompt
 
-Representative tasks: - Test GET /api/day/12. - TestPOST /api/day/12/github. - Test POST /api/day/12/linkedin. - TestPOST /api/day/12/complete. - Fix API request-path issues affectingdeployment. - Verify successful HTTP responses.
+> Build a student dashboard for a 60-day coding challenge showing the current streak, today's task, challenge progress, completion percentage, achievements, and student standing. Prioritize the information a student needs to continue today's work.
 
-7. Build and Deployment Troubleshooting
+The dashboard was designed around the daily decision flow:
 
-AI assistance was used to troubleshoot the Vercel deployment and Gitrepository configuration.
+**What have I done? → What do I need to do today? → How do I submit proof? → What's next?**
 
-Representative tasks: - Verify the Vite production build withnpm run build. - Configure Vercel build settings. - Diagnose a Verceltsc: Permission denied build error. - Remove generated/dependencydirectories from Git tracking. - Push the corrected project to thepublic GitHub repository. - Verify the live Vercel deployment.
+---
 
-8. Antigravity Usage
+## 4. Challenge Day Experience
 
-Antigravity was also used as part of the AI-assisted developmentworkflow for implementing and refining project changes.
+AI assistance was used to develop the individual challenge-day experience at `/day/12`.
 
-It was used alongside the other AI-assisted tools for coding tasks,project changes, debugging, and development workflow support.
+### Representative Prompt
 
-9. Verification
+> Create a complete Day 12 challenge experience where a student can understand the task, see what needs to be built, submit GitHub repository or commit proof, submit LinkedIn proof, and complete the day.
 
-The final deployed application was tested in: - Desktop browser -Guest/incognito mode - Mobile phone
+The implementation includes:
 
-The deployed application successfully loaded and thechallenge/login/submission flow was verified.
+- Day-specific challenge information
+- Task requirements
+- Build guidance
+- GitHub proof submission
+- LinkedIn proof submission
+- Completion state
+- Progress toward the next day
 
-Note
+---
 
-This document is a concise AI-usage record based on the developmentworkflow. It summarizes the major AI-assisted tasks rather thanreproducing every individual chat message or terminal interaction.
+## 5. Onboarding Experience
+
+AI assistance was used to improve the first-time student experience and make the platform easier to understand.
+
+### Representative Prompt
+
+> Design a polished onboarding flow for a student joining a 60-day coding challenge. Make the experience motivating, clear, mobile-first, and focused on helping the student understand how the daily challenge works.
+
+The onboarding experience introduces the challenge workflow and helps reduce the initial learning curve.
+
+---
+
+## 6. Streak, Progress and Achievement System
+
+AI assistance was used to implement the progress and motivation elements of the platform.
+
+### Representative Prompt
+
+> Create a realistic student progress system for a 60-day coding challenge including streaks, completion percentage, achievements, daily progress, and student standing.
+
+The interface also considers different student states such as:
+
+- Active streak
+- Missed day
+- First-day / zero-streak state
+- Empty profile state
+- Completed challenge day
+
+---
+
+## 7. GitHub and LinkedIn Proof Submission
+
+AI assistance was used to implement and debug the proof-of-work workflow.
+
+### Representative Tasks
+
+> Add GitHub repository/commit proof submission to the daily challenge.
+
+> Add LinkedIn post proof submission.
+
+> Connect the proof submission forms to the corresponding API endpoints.
+
+> Add validation, error handling, and successful submission feedback.
+
+The proof workflow was designed to make the daily submission process simple and clear for students.
+
+---
+
+## 8. Authentication and Student Session
+
+AI assistance was used to implement a lightweight mocked authentication/session flow.
+
+### Representative Tasks
+
+> Create an email-based login experience for the challenge platform.
+
+> Persist the signed-in student state.
+
+> Add logout functionality.
+
+> Protect student-related API routes.
+
+Authentication was implemented as part of the mocked application experience because production authentication was outside the hackathon scope.
+
+---
+
+## 9. API Development
+
+AI assistance was used to develop and connect the frontend with serverless API endpoints.
+
+### Representative Tasks
+
+- Implement challenge data endpoints.
+- Implement dashboard data.
+- Implement student progress.
+- Implement achievements.
+- Implement GitHub proof submission.
+- Implement LinkedIn proof submission.
+- Implement Day 12 completion.
+- Implement authentication/session handling.
+- Implement recruiter and admin workspace data.
+
+The application uses mocked data and serverless API handlers as permitted by the problem statement.
+
+---
+
+## 10. API Debugging and Testing
+
+AI assistance was used to investigate API request failures and verify the deployed application.
+
+### Representative Tasks
+
+> Test the Day 12 API endpoint.
+
+> Test GitHub proof submission.
+
+> Test LinkedIn proof submission.
+
+> Test Day 12 completion.
+
+> Identify and fix incorrect API request paths.
+
+> Verify that the frontend communicates correctly with the deployed API.
+
+These changes helped ensure that the proof submission and challenge completion flows worked correctly after deployment.
+
+---
+
+## 11. Vercel Deployment Troubleshooting
+
+AI assistance was used during deployment and production debugging.
+
+### Representative Tasks
+
+> Verify the production build.
+
+> Configure the project for Vercel deployment.
+
+> Investigate deployment failures.
+
+> Fix Vercel API routing issues.
+
+> Resolve the serverless function limit.
+
+> Consolidate API functionality where necessary.
+
+The API architecture was adjusted to remain compatible with the Vercel deployment environment.
+
+---
+
+## 12. Responsive and Mobile-First Development
+
+AI assistance was used to refine the interface for the required 390px mobile viewport.
+
+### Representative Prompt
+
+> Review the ABTalks interface as a mobile-first product. Ensure the main content, cards, buttons, forms, navigation, and challenge workflow remain usable at 390px width without horizontal overflow.
+
+The application was tested across:
+
+- Desktop browser
+- Mobile viewport
+- Physical mobile device
+
+---
+
+## 13. Recruiter and Admin Workspaces
+
+Additional workspace functionality was implemented to support the broader platform concept.
+
+### Representative Prompt
+
+> Create separate recruiter and admin workspace experiences using realistic mocked data while keeping the main student experience focused on the 60-day challenge.
+
+These workspaces were kept separate from the three required submission routes.
+
+---
+
+## 14. UI/UX Refinement
+
+AI assistance was used throughout development to improve:
+
+- Visual hierarchy
+- Spacing
+- Typography
+- Cards
+- Buttons
+- Progress indicators
+- Empty states
+- Error states
+- Completion states
+- Mobile responsiveness
+- Interaction feedback
+
+The goal was to create a polished experience rather than simply satisfying the functional requirements.
+
+---
+
+## 15. Testing and Verification
+
+AI assistance was used to review and verify the final implementation.
+
+### Verification Included
+
+- Production build verification
+- API endpoint testing
+- Route testing
+- Proof submission testing
+- Challenge completion testing
+- Responsive layout testing
+- Desktop browser testing
+- Mobile testing
+- Vercel deployment verification
+
+The required routes were verified:
+
+```text
+/
+/dashboard
+/day/12
