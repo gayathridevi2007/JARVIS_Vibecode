@@ -1,4 +1,4 @@
-import { getState } from './state.js';
+import { getState } from '../lib/state.js';
 
 export default function handler(req, res) {
   if (req.method !== 'GET') {

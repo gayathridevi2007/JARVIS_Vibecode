@@ -5,6 +5,14 @@
       "destination": "/api/auth"
     },
     {
+      "source": "/api/recruiter",
+      "destination": "/api/workspace?role=recruiter"
+    },
+    {
+      "source": "/api/admin",
+      "destination": "/api/workspace?role=admin"
+    },
+    {
       "source": "/api/day/12/github",
       "destination": "/api/day/12"
     },

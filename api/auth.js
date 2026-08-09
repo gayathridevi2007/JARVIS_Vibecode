@@ -1,4 +1,4 @@
-import { createUserState, getState } from './state.js';
+import { createUserState, getState } from '../lib/state.js';
 
 function isValidEmail(value) {
   return typeof value === 'string' && /.+@.+\..+/.test(value.trim());

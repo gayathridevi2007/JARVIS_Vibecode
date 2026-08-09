@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { resetState, getState, updateState } from './state.js';
+import { resetState, getState, updateState } from '../../lib/state.js';
 
 resetState();
 

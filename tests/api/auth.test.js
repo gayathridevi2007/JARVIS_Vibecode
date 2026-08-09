@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { createUserState, getUserState } from './state.js';
+import { createUserState, getUserState } from '../../lib/state.js';
 
 const first = createUserState({ id: 'user-123', email: 'demo@example.com', name: 'Demo User' });
 assert.equal(first.user.id, 'user-123');
