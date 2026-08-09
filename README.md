@@ -1,61 +1,120 @@
-# ABTalks — 60-Day Coding Challenge
+ABTalks — 60-Day Coding Challenge
 
-A mobile-first redesign of ABTalks that helps college students build consistently, track progress, and showcase their daily coding work.
+A modern, mobile-first web application designed for students participating in the ABTalks 60-Day Coding Challenge. The platform helps students build consistent coding habits through daily challenges, progress tracking, proof submission, and achievements.
 
-## Live Demo
+Live Demo
 
 https://jarvis-vibecode.vercel.app
 
-## Route Map
+Repository
 
-```text
-/
-/dashboard
-/day/12
-Features
+https://github.com/gayathridevi2007/JARVIS_Vibecode
+
+Routes
+/ — Landing and onboarding
+/dashboard — Student progress dashboard
+/day/12 — Day 12 challenge and proof submission
+/recruiter — Recruiter workspace
+/admin — Admin workspace
+Key Features
 60-day coding challenge
-Daily coding tasks
-Streak and progress tracking
+Daily coding tasks and learning objectives
+Current and best streak tracking
+Progress and completion tracking
 GitHub proof submission
 LinkedIn proof submission
-Achievements and student standing
-Missed-day and empty-state handling
-Mobile-first design optimized for 390px
-Recruiter and Admin workspaces
-Tech Stack
+Achievement tracking
+Student standing and percentile
+Streak recovery experience
+Loading, error, and empty states
+Mobile-first responsive design
+Recruiter talent discovery workspace
+Admin platform management workspace
+User Flow
+Discover the 60-day challenge.
+Access the student dashboard.
+Open the current daily challenge.
+Complete the required coding task.
+Submit GitHub and LinkedIn proof.
+Complete the challenge day.
+Track progress, streaks, and achievements.
+Technology Stack
 React
 TypeScript
 Vite
 React Router
 Tailwind CSS
 Framer Motion
+Lucide React
 Node.js
-Vercel
-AI Usage
-
-AI tools were used for UI development, API implementation, debugging, responsive design, deployment fixes, and testing.
-
-Complete AI usage history: PROMPTS.md
-
+Vercel Serverless Functions
+Express
+Git and GitHub
 Project Structure
-src/      → Frontend
-api/      → API endpoints
-lib/      → Shared logic
-tests/    → API tests
-PROMPTS.md → AI usage log
-Run Locally
+src/        Frontend application
+api/        Serverless API endpoints
+lib/        Shared application logic
+tests/      API tests
+server.cjs  Local API server
+vercel.json Vercel configuration
+PROMPTS.md  AI-assisted development log
+API
+
+The application provides API endpoints for:
+
+Authentication
+Student sessions
+Dashboard data
+Daily challenge data
+Progress tracking
+Achievements
+GitHub proof submission
+LinkedIn proof submission
+Recruiter workspace
+Admin workspace
+
+The recruiter and admin workspaces use mock data for demonstration purposes.
+
+AI-Assisted Development
+
+AI tools were used during development for:
+
+Product and UX planning
+React and TypeScript implementation
+Mobile-first UI development
+API implementation
+Authentication and session handling
+GitHub and LinkedIn proof workflows
+Progress and streak logic
+Recruiter and admin workspace development
+Debugging and API verification
+Responsive design improvements
+Vercel deployment troubleshooting
+Production build verification
+
+The complete AI-assisted development record is available in PROMPTS.md.
+
+Local Development
+
+Install dependencies:
+
 npm install
+
+Start the development server:
+
 npm run dev
 
-Build:
+Build the project:
 
 npm run build
-Repository
-
-https://github.com/gayathridevi2007/JARVIS_Vibecode
-
 Deployment
 
-Deployed on Vercel.
+The application is deployed using Vercel.
 
-Built for the VibeCode Hackathon.
+Live application:
+
+https://jarvis-vibecode.vercel.app
+
+Hackathon
+
+Built for the ABTalks VibeCode Hackathon.
