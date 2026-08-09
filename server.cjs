@@ -24,6 +24,8 @@ async function loadHandler(relativePath) {
   const linkedinProofHandler = await loadHandler('api/proof/linkedin.js');
   const completeChallengeHandler = await loadHandler('api/challenges/[day]/complete.js');
   const dayTwelveHandler = await loadHandler('api/day/12.js');
+  const recruiterHandler = await loadHandler('api/recruiter.js');
+  const adminHandler = await loadHandler('api/admin.js');
 
   app.post('/api/auth/login', (req, res) => authHandler(req, res));
   app.get('/api/student', (req, res) => studentHandler(req, res));
@@ -32,6 +34,8 @@ async function loadHandler(relativePath) {
   app.get('/api/progress', (req, res) => progressHandler(req, res));
   app.get('/api/achievements', (req, res) => achievementsHandler(req, res));
   app.get('/api/day/12', (req, res) => dayTwelveHandler(req, res));
+  app.get('/api/recruiter', (req, res) => recruiterHandler(req, res));
+  app.get('/api/admin', (req, res) => adminHandler(req, res));
   app.post('/api/day/12/github', (req, res) => dayTwelveHandler(req, res));
   app.post('/api/day/12/linkedin', (req, res) => dayTwelveHandler(req, res));
   app.post('/api/day/12/complete', (req, res) => dayTwelveHandler(req, res));

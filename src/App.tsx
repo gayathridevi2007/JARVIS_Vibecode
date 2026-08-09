@@ -4,23 +4,23 @@ import LoginRoute from './routes/LoginRoute';
 import LandingPage from './routes/LandingPage';
 import DashboardPage from './routes/DashboardPage';
 import DayPage from './routes/DayPage';
+import RecruiterPage from './routes/RecruiterPage';
+import AdminPage from './routes/AdminPage';
 
 function App() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-slate-950 text-white">
-      <Routes>
-        <Route element={<ProtectedRoute requireAuth={false} />}>
-          <Route path="/" element={<LoginRoute />} />
-          <Route path="/login" element={<LoginRoute />} />
-          <Route path="/landing" element={<LandingPage />} />
-        </Route>
+    <Routes>
+      <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<LoginRoute />} />
 
-        <Route element={<ProtectedRoute requireAuth />}>
-          <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/day/:dayNumber" element={<DayPage />} />
-        </Route>
-      </Routes>
-    </div>
+      <Route path="/recruiter" element={<RecruiterPage />} />
+      <Route path="/admin" element={<AdminPage />} />
+
+      <Route element={<ProtectedRoute requireAuth />}>
+        <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/day/:dayNumber" element={<DayPage />} />
+      </Route>
+    </Routes>
   );
 }
 
