@@ -61,7 +61,7 @@ export default function handler(req, res) {
   if (req.method === 'POST') {
     const body = req.body || {};
 
-    if (req.path.includes('/github')) {
+    if ((req.url || '').includes('/github')) {
       const url = normalizeUrl(body.url || '');
 
       if (!isLikelyUrl(url)) {
@@ -79,7 +79,7 @@ export default function handler(req, res) {
       return;
     }
 
-    if (req.path.includes('/linkedin')) {
+    if ((req.url || '').includes('/linkedin')) {
       const url = normalizeUrl(body.url || '');
 
       if (!isLikelyUrl(url)) {
@@ -97,7 +97,7 @@ export default function handler(req, res) {
       return;
     }
 
-    if (req.path.includes('/complete')) {
+    if ((req.url || '').includes('/complete')) {
       const bothSubmitted = state.proof.github.submitted && state.proof.linkedin.submitted;
       if (!bothSubmitted) {
         res.status(400).json({ error: 'Both GitHub and LinkedIn proof must be submitted before completing the day.' });
