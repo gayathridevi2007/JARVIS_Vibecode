@@ -59,6 +59,3 @@ Deployment
 Deployed on Vercel.
 
 Built for the VibeCode Hackathon.
-
-
-**This is the version I'd use.** It is professional without being unnecessarily long, and it covers th
