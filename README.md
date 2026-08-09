@@ -1,60 +1,64 @@
 # ABTalks — 60-Day Coding Challenge
 
-A mobile-first redesign of ABTalks designed to help Indian college students build consistent coding habits through a 60-day public challenge.
+A mobile-first redesign of ABTalks that helps college students build consistently, track progress, and showcase their daily coding work.
 
 ## Live Demo
 
 https://jarvis-vibecode.vercel.app
 
-## Required Routes
+## Route Map
 
+```text
 /
- /dashboard
+/dashboard
 /day/12
+Features
+60-day coding challenge
+Daily coding tasks
+Streak and progress tracking
+GitHub proof submission
+LinkedIn proof submission
+Achievements and student standing
+Missed-day and empty-state handling
+Mobile-first design optimized for 390px
+Recruiter and Admin workspaces
+Tech Stack
+React
+TypeScript
+Vite
+React Router
+Tailwind CSS
+Framer Motion
+Node.js
+Vercel
+AI Usage
 
-## Key Features
+AI tools were used for UI development, API implementation, debugging, responsive design, deployment fixes, and testing.
 
-- 60-day coding challenge experience
-- Mobile-first student experience
-- Student progress dashboard
-- Current streak tracking
-- Daily challenge workflow
-- Challenge progress tracking
-- GitHub proof submission
-- LinkedIn proof submission
-- Achievement tracking
-- Missed-day recovery experience
-- Responsive design for mobile and desktop
+Complete AI usage history: PROMPTS.md
 
-## Thoughtful Student Experience
+Project Structure
+src/      → Frontend
+api/      → API endpoints
+lib/      → Shared logic
+tests/    → API tests
+PROMPTS.md → AI usage log
+Run Locally
+npm install
+npm run dev
 
-ABTalks includes a recovery experience for students who miss a day, helping them continue their learning journey instead of feeling like their entire streak is lost.
+Build:
 
-## Tech Stack
+npm run build
+Repository
 
-- React
-- TypeScript
-- Vite
-- Node.js
-- JavaScript
-- CSS
-- Vercel
+https://github.com/gayathridevi2007/JARVIS_Vibecode
 
-## Project Structure
+Deployment
 
-- `src/` — Frontend application
-- `api/` — Backend API endpoints
-- `tests/` — API tests
-- `PROMPTS.md` — AI usage log
+Deployed on Vercel.
 
-## AI Usage Log
+Built for the VibeCode Hackathon.
 
-The complete AI usage and development prompts are documented in `PROMPTS.md`.
 
-## Submission Routes
-
-The three required routes are:
-
-1. `/`
-2. `/dashboard`
-3. `/day/12`
+**This is the version I'd use.** It is professional without being unnecessarily long, and it covers th
