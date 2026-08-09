@@ -1,56 +1,66 @@
-ABTalks — 60-Day Coding Challenge
+# ABTalks — 60-Day Coding Challenge
 
 A modern, mobile-first web application designed for students participating in the ABTalks 60-Day Coding Challenge. The platform helps students build consistent coding habits through daily challenges, progress tracking, proof submission, and achievements.
 
-Live Demo
+## Live Demo
 
 https://jarvis-vibecode.vercel.app
 
-Repository
+## Repository
 
 https://github.com/gayathridevi2007/JARVIS_Vibecode
 
-Routes
-/ — Landing and onboarding
-/dashboard — Student progress dashboard
-/day/12 — Day 12 challenge and proof submission
-/recruiter — Recruiter workspace
-/admin — Admin workspace
-Key Features
-60-day coding challenge
-Daily coding tasks and learning objectives
-Current and best streak tracking
-Progress and completion tracking
-GitHub proof submission
-LinkedIn proof submission
-Achievement tracking
-Student standing and percentile
-Streak recovery experience
-Loading, error, and empty states
-Mobile-first responsive design
-Recruiter talent discovery workspace
-Admin platform management workspace
-User Flow
-Discover the 60-day challenge.
-Access the student dashboard.
-Open the current daily challenge.
-Complete the required coding task.
-Submit GitHub and LinkedIn proof.
-Complete the challenge day.
-Track progress, streaks, and achievements.
-Technology Stack
-React
-TypeScript
-Vite
-React Router
-Tailwind CSS
-Framer Motion
-Lucide React
-Node.js
-Vercel Serverless Functions
-Express
-Git and GitHub
-Project Structure
+## Routes
+
+- `/` — Landing and onboarding
+- `/dashboard` — Student progress dashboard
+- `/day/12` — Day 12 challenge and proof submission
+- `/recruiter` — Recruiter workspace
+- `/admin` — Admin workspace
+
+## Key Features
+
+- 60-day coding challenge
+- Daily coding tasks and learning objectives
+- Current and best streak tracking
+- Progress and completion tracking
+- GitHub proof submission
+- LinkedIn proof submission
+- Achievement tracking
+- Student standing and percentile
+- Streak recovery experience
+- Loading, error, and empty states
+- Mobile-first responsive design
+- Recruiter talent discovery workspace
+- Admin platform management workspace
+
+## User Flow
+
+1. Discover the 60-day challenge.
+2. Access the student dashboard.
+3. Open the current daily challenge.
+4. Complete the required coding task.
+5. Submit GitHub and LinkedIn proof.
+6. Complete the challenge day.
+7. Track progress, streaks, and achievements.
+
+## Technology Stack
+
+- React
+- TypeScript
+- Vite
+- React Router
+- Tailwind CSS
+- Framer Motion
+- Lucide React
+- Node.js
+- Vercel Serverless Functions
+- Express
+- Git and GitHub
+
+## Project Structure
+
+```text
 src/        Frontend application
 api/        Serverless API endpoints
 lib/        Shared application logic
